@@ -4,6 +4,8 @@
 #define RFM95_RST 7
 #define RFM95_INT 2
 
+int led = 9;
+
 // Change to 434.0 or other frequency, must match RX's freq!
 #define RF95_FREQ 915.0
 
@@ -41,6 +43,8 @@ void setup()
   rf95.setTxPower(23, false);
 }
 
+
+
 void loop()
 {
   if (rf95.available())
@@ -51,6 +55,7 @@ void loop()
     
     if (rf95.recv(buf, &len))
     {
+      digitalWrite(led, HIGH);
       Serial.println((char*)buf); 
     }
 
