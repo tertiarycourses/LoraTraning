@@ -9,36 +9,41 @@ https://www.tertiarycourses.com.sg/internet-of-things-iot-training-lora.html
 
 https://www.tertiarycourses.com.my/internet-of-things-iot-training-lora-malaysia.html
 
-Module 1 Introduction to IoT
-
-What is IoT?
-IoT Applications
-IoT Pipeline and Components
-Module 2 Overview of LoRa & LoRaWAN
-
-What is LoRaWAN
-What is LoRa
-LoRa Network Topology
-LoRa Gateway and End Node
-Module 3 Setup LoRa Client and Server
-
-Overview of LoRa Shield
-Install LoRa Library
-Setup LoRa Client 
-Setup LoRa Server
-Module 4 Transmitting Environment Data Over Lora
-
-Setup DHT Sensor
-Install DHT Library
-Sensing and Transmitting DHT Data
-Receiving DHT Data
-Module 5 Data Visualization using Node-Red
-
-What is Node-Red
-Install Node-Red on Raspberry Pi
-Connect Raspberry Pi to Arduino 
-Stream Data via Serial Node
-Split DHT Data via Function Node
-Install Dashboard Node
-Display DHT Data with Dashboard
-Case Studies
+<p><strong>Module 1 Introduction to IoT</strong></p>
+<ul>
+<li>What is IoT?</li>
+<li>IoT Applications</li>
+<li>IoT Pipeline and Components</li>
+</ul>
+<p><strong>Module 2 Overview of LoRa &amp; LoRaWAN</strong></p>
+<ul>
+<li>What is LoRaWAN</li>
+<li>What is LoRa</li>
+<li>LoRa Network Topology</li>
+<li>LoRa Gateway and End Node</li>
+</ul>
+<p><strong>Module 3 Setup LoRa Client and Server</strong> </p>
+<ul>
+<li>Overview of LoRa Shield</li>
+<li>Install LoRa Library</li>
+<li>Setup LoRa Client&nbsp;</li>
+<li>Setup LoRa Server</li>
+</ul>
+<p><strong>Module 4 Transmitting Environment Data Over Lora</strong></p>
+<ul>
+<li>Setup DHT Sensor</li>
+<li>Install DHT Library</li>
+<li>Sensing and Transmitting DHT Data</li>
+<li>Receiving DHT Data</li>
+</ul>
+<p><strong>Module 5 Data Visualization using Node-Red</strong> </p>
+<ul>
+<li>What is Node-Red</li>
+<li>Install Node-Red on Raspberry Pi</li>
+<li>Connect Raspberry Pi to Arduino&nbsp;</li>
+<li>Stream Data via Serial Node</li>
+<li>Split DHT Data via Function Node</li>
+<li>Install Dashboard Node</li>
+<li>Display DHT Data with Dashboard</li>
+<li>Case Studies</li>
+</ul>
