@@ -43,9 +43,9 @@ int i = 1;
 void loop()
 {
   delay(500); // Wait 1 second between transmits
-  Serial.println("Transmitting..."); // Send a message to rf95_server
+  Serial.println("Transmitting..."); 
  
-  String d = "Hello "+String(i);
+  String d = "Hello "+String(i)+" "; //add a trailing space is necessary 
   i = i + 1;
   
   char data[d.length()];
@@ -54,7 +54,7 @@ void loop()
   rf95.send((uint8_t*)data, sizeof(data));
  
   Serial.println("Waiting for packet to complete..."); 
-  delay(10);
+  delay(1000);
   rf95.waitPacketSent();
   Serial.println(" complete...");
    

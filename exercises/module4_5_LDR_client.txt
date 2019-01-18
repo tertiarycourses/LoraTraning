@@ -45,22 +45,21 @@ void setup()
 void loop()
 {
   delay(500); // Wait 1 second between transmits
-  Serial.println("Transmitting..."); // Send a message to rf95_server
+  Serial.println("Transmitting..."); 
  
   sensorValue = analogRead(sensorPin); 
   Serial.println(sensorValue); 
   
-//  String d = "{";
-  String d = "{\"Resistance\":"+ String (sensorValue);
-  d += "}";
-  d += ".";
+  String d = "{\"LDR\":"+ String (sensorValue);
+  d += "} "; \\adding a trailing space is necessary
+
   char data[d.length()];
   d.toCharArray(data,d.length());
   Serial.println(d);
   rf95.send((uint8_t*)data, sizeof(data));
  
   Serial.println("Waiting for packet to complete..."); 
-  delay(10);
+  delay(1000);
   rf95.waitPacketSent();
   Serial.println(" complete...");
    

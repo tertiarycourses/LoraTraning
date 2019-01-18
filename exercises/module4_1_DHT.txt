@@ -16,11 +16,11 @@ void loop()
  float t = dht.readTemperature();
  float h = dht.readHumidity();
   
-//  String d = "{";
   String d = "{\"Temp\":"+ String (t)+",";
   d += "\"Hum\":"+ String (h);
-  d += "}";
-  d += ".";
+  d += "} ";
+  
   Serial.println(d);
+  delay(1000);
    
 }

@@ -49,26 +49,24 @@ void setup()
 void loop()
 {
   delay(500); // Wait 1 second between transmits
-  Serial.println("Transmitting..."); // Send a message to rf95_server
+  Serial.println("Transmitting..."); 
  
  float t = dht.readTemperature();
  float h = dht.readHumidity();
  sensorValue = analogRead(sensorPin); 
   
-  
-//  String d = "{";
   String d = "{\"Temp\":"+ String (t)+",";
   d += "\"Hum\":"+ String (h) +",";
-  d += "\"Resistance\":"+ String (sensorValue);
-  d += "}";
-  d += ".";
+  d += "\"LDR\":"+ String (sensorValue);
+  d += "} "; \\adding a traiing space is necessary
+
   char data[d.length()];
   d.toCharArray(data,d.length());
   Serial.println(d);
   rf95.send((uint8_t*)data, sizeof(data));
  
   Serial.println("Waiting for packet to complete..."); 
-  delay(10);
+  delay(1000);
   rf95.waitPacketSent();
   Serial.println(" complete...");
    

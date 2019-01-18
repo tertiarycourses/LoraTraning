@@ -1,11 +1,3 @@
-# For Temp and Humidity
-
-var temp = {payload: msg.payload.temperature};
-var humid = {payload: msg.payload.humidity};
-return [temp,humid];
-
-
-# For Temp, Humidity and LDR
 var temp = {payload: msg.payload.Temp};
 var humid = {payload: msg.payload.Hum};
 var ldr = {payload: msg.payload.LDR};
