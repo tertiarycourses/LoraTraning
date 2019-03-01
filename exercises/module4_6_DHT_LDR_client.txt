@@ -53,12 +53,12 @@ void loop()
  
  float t = dht.readTemperature();
  float h = dht.readHumidity();
- sensorValue = analogRead(sensorPin); 
+ float sensorValue = analogRead(sensorPin); 
   
   String d = "{\"Temp\":"+ String (t)+",";
   d += "\"Hum\":"+ String (h) +",";
   d += "\"LDR\":"+ String (sensorValue);
-  d += "} "; \\adding a traiing space is necessary
+  d += "} "; 
 
   char data[d.length()];
   d.toCharArray(data,d.length());

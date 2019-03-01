@@ -51,7 +51,7 @@ void loop()
   Serial.println(sensorValue); 
   
   String d = "{\"LDR\":"+ String (sensorValue);
-  d += "} "; \\adding a trailing space is necessary
+  d += "} "; 
 
   char data[d.length()];
   d.toCharArray(data,d.length());
